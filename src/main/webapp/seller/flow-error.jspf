@@ -1,0 +1,8 @@
+<%
+    String flowError = (String) request.getAttribute("flowError");
+    if (flowError != null && !flowError.isEmpty()) {
+%>
+    <div class="error"><%= flowError %></div>
+<%
+    }
+%>
